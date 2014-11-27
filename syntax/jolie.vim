@@ -16,6 +16,7 @@ syn keyword jolieKey execution single concurrent sequential
 
 " Comments
 syn match jolieComment "//.*$"
+syn region jolieComment start='/\*' end='\*/'
 
 " Regular int like number with - + or nothing in front
 syn match jolieNumber '\d\+' display

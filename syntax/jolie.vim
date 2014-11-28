@@ -11,7 +11,7 @@ syn keyword jolieKey inputPort outputPort interface type instanceof courier forw
 syn keyword jolieKey OneWay RequestResponse Location Protocol Interfaces Aggregates Redirects
 syn keyword jolieKey main init define csets this embedded constants
 syn keyword jolieKey install scope throw throws synchronized 
-syn keyword jolieKey undef is_defined 
+syn keyword jolieKey undef is_defined is_int is_bool is_string is_double is_long
 syn keyword jolieKey execution single concurrent sequential
 
 " Comments

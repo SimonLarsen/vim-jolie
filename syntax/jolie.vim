@@ -1,5 +1,5 @@
 " Vim syntax file
-" Language: jolie 1.0
+" Language: jolie
 
 if exists("b:current_syntax")
 	finish

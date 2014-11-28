@@ -1,0 +1,98 @@
+## Comments
+snippet /*
+	/*
+	 * ${0}
+	 */
+snippet /**!
+	/**!
+	 * ${0}
+	 */
+## Include
+snippet inc
+	include "${1}.iol"
+##
+## Program blocks
+snippet exec
+	execution { ${1} }
+snippet const
+	constants {
+		${0}
+	}
+snippet init
+	init {
+		${0}
+	}
+snippet def
+	define ${1:id} {
+		${0}
+	}
+snippet main
+	main {
+		${0}
+	}
+snippet ip
+	inputPort ${1:id} {
+		Location: "${2:socket://}"
+		Protocol: ${3:sodep}
+		Interfaces: ${4:Interface}
+	}
+snippet op
+	outputPort ${1:id} {
+		Location: "${2:socket://}"
+		Protocol: ${3:sodep}
+		Interfaces: ${4:Interface}
+	}
+snippet int
+	interface ${1:id} {
+		${0}
+	}
+snippet sc
+	scope (${1:id}) {
+		${0}
+	}
+snippet install
+	install ( ${1:Fault} =>
+		${0}
+	)
+##
+## Control statements
+snippet if
+	if (${1}) {
+		${2}
+	}
+snippet else
+	else {
+		${1}
+	}
+snippet eif
+	else if (${1}) {
+		${2}
+	}
+##
+## Input and output port definition
+snippet loc
+	Location: ${0}
+snippet pro
+	Protocol: ${0}
+snippet Int
+	Interfaces: ${0}
+snippet agg
+	Aggregates: ${0}
+##
+## Interface definition
+snippet rr
+	RequestResponse: ${0}
+snippet ow
+	OneWay: ${0}
+##
+## Constants and variables
+snippet np
+	nullProcess
+snippet gl
+	global
+##
+## Library functions
+snippet print
+	print@Console(${1})()
+snippet println
+	println@Console(${1})()

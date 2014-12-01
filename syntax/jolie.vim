@@ -18,13 +18,14 @@ syn keyword jolieExecution single concurrent sequential
 syn keyword jolieKeyword install scope throw synchronized spawn comp run forward linkIn linkOut
 syn keyword jolieKeyword undef instanceof is_defined is_int is_bool is_string is_double is_long
 
-" Regular int like number with - + or nothing in front
-syn match jolieNumber '\d\+' display
-syn match jolieNumber '[-+]\d\+' display
-
-" Floating point number with decimal
-syn match jolieNumber '\d\+\.\d*' display
-syn match jolieNumber '[-+]\d\+\.\d*' display
+" Integer number
+syn match jolieNumber "\<\d\+\>"
+" Floating point number, with dot, optional exponent
+syn match jolieNumber  "\<\d\+\.\d*\%([eE][-+]\=\d\+\)\=\>"
+" Floating point number, starting with a dot, optional exponent
+syn match jolieNumber  "\.\d\+\%([eE][-+]\=\d\+\)\=\>"
+" Floating point number, without dot, with exponent
+syn match jolieNumber  "\<\d\+[eE][-+]\=\d\+\>"
 
 " Includes
 syn keyword jolieInclude include

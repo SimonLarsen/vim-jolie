@@ -1,7 +1,7 @@
 vim-jolie
 =========
 
-Vim syntax highlighting and [SnipMate](https://github.com/garbas/vim-snipmate) snippets the Jolie programming language.
+Vim syntax highlighting and [SnipMate](https://github.com/garbas/vim-snipmate) snippets for the Jolie programming language.
 
 ## Installation
 

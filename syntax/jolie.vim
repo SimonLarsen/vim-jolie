@@ -34,7 +34,7 @@ syn keyword jolieInclude include
 syn keyword jolieType bool int long double string raw void undefined any
 
 " Built-in constants
-syn keyword jolieConst this nullProcess cH global
+syn keyword jolieConst true false this nullProcess cH global
 
 " Strings
 syn region jolieString start='"' end='"'

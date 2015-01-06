@@ -11,7 +11,7 @@ syn match jolieComment "//.*$" contains=jolieTodo
 syn region jolieComment start='/\*' end='\*/' contains=jolieTodo
 
 " Keywords
-syn keyword jolieBlock constants inputPort outputPort interface csets init define main embedded type courier execution
+syn keyword jolieBlock constants inputPort outputPort interface cset init define main embedded type courier execution
 syn keyword jolieControl if then else for foreach while with in
 syn keyword jolieInterface OneWay RequestResponse Location Protocol Interfaces Aggregates Redirects throws
 syn keyword jolieExecution single concurrent sequential
@@ -34,7 +34,7 @@ syn keyword jolieInclude include
 syn keyword jolieType bool int long double string raw void undefined any
 
 " Built-in constants
-syn keyword jolieConst true false this nullProcess null cH global
+syn keyword jolieConst true false this nullProcess null cH csets global
 
 " Strings
 syn region jolieString start='"' end='"'
